@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="pokemon-api.css">
+</head>
+<div id="background"></div>
+<body>
+    <div id="h1">
+        <h1>Get to know your favorite Pokemon!</h1>
+    </div>
+    <h2 class="sub-heading">Search to get some info on your Pokemon</h2>
+
+    <div class="wrapper">
+        <div class="controls">
+            <!-- Search Form-->
+            <form>
+                <p>
+                    <label for="search">Enter Pokemon name here: </label>
+                    <input type="text" id="search" class="search" placeholder="must be all lowercase">
+                </p>
+                <p>
+                    <button class="submit">Throw Poke Ball</button>
+                </p>
+            </form>
+        </div>
+        <!--Results Section-->
+        <div class="results">
+            <!--Results From Request-->
+        <section>   
+            <h2>Type:</h2>
+                <ul id="types"></ul>              
+            <h2>Moves: These are just a few moves this Pokemon can learn!</h2>
+                <ul id="moves"></ul>
+            <h2>Abilities:</h2>
+                <ul id="abilities"></ul>
+            </section>
+            </div>
+        </div>
+
+    <script src="pokemon-api.js"></script>
+</body>
+</html>
